@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2922DCEB1BABCD2A00CB3CE2 /* MapForRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922DCEA1BABCD2A00CB3CE2 /* MapForRouteViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2952AE161BAADF60005EACEF /* TripInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2952AE151BAADF60005EACEF /* TripInfo.swift */; settings = {ASSET_TAGS = (); }; };
 		29A5E9821BAA907B005E3FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A5E9811BAA907B005E3FDE /* AppDelegate.swift */; };
-		29A5E9841BAA907B005E3FDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A5E9831BAA907B005E3FDE /* ViewController.swift */; };
 		29A5E9871BAA907B005E3FDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A5E9851BAA907B005E3FDE /* Main.storyboard */; };
 		29A5E98A1BAA907B005E3FDE /* TripStuff2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29A5E9881BAA907B005E3FDE /* TripStuff2.xcdatamodeld */; };
 		29A5E98C1BAA907B005E3FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A5E98B1BAA907B005E3FDE /* Assets.xcassets */; };
 		29A5E98F1BAA907B005E3FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A5E98D1BAA907B005E3FDE /* LaunchScreen.storyboard */; };
 		29A5E99A1BAA907B005E3FDE /* TripStuff2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A5E9991BAA907B005E3FDE /* TripStuff2Tests.swift */; };
 		29A5E9A51BAA907C005E3FDE /* TripStuff2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A5E9A41BAA907C005E3FDE /* TripStuff2UITests.swift */; };
+		29F917791BAA941F0021F230 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F917781BAA941F0021F230 /* JournalTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		29F9177B1BAACB3A0021F230 /* TripDetailSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9177A1BAACB3A0021F230 /* TripDetailSettingViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2922DCEA1BABCD2A00CB3CE2 /* MapForRouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapForRouteViewController.swift; sourceTree = "<group>"; };
+		2952AE151BAADF60005EACEF /* TripInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripInfo.swift; path = ../TripInfo.swift; sourceTree = "<group>"; };
 		29A5E97E1BAA907B005E3FDE /* TripStuff2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripStuff2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A5E9811BAA907B005E3FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29A5E9831BAA907B005E3FDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		29A5E9861BAA907B005E3FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29A5E9891BAA907B005E3FDE /* TripStuff2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TripStuff2.xcdatamodel; sourceTree = "<group>"; };
 		29A5E98B1BAA907B005E3FDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		29A5E9A01BAA907C005E3FDE /* TripStuff2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripStuff2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A5E9A41BAA907C005E3FDE /* TripStuff2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripStuff2UITests.swift; sourceTree = "<group>"; };
 		29A5E9A61BAA907C005E3FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F917781BAA941F0021F230 /* JournalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JournalTableViewController.swift; path = ../JournalTableViewController.swift; sourceTree = "<group>"; };
+		29F9177A1BAACB3A0021F230 /* TripDetailSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripDetailSettingViewController.swift; path = ../TripDetailSettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,16 @@
 		29A5E9801BAA907B005E3FDE /* TripStuff2 */ = {
 			isa = PBXGroup;
 			children = (
-				29A5E9811BAA907B005E3FDE /* AppDelegate.swift */,
-				29A5E9831BAA907B005E3FDE /* ViewController.swift */,
 				29A5E9851BAA907B005E3FDE /* Main.storyboard */,
+				29F917781BAA941F0021F230 /* JournalTableViewController.swift */,
+				2952AE151BAADF60005EACEF /* TripInfo.swift */,
+				29F9177A1BAACB3A0021F230 /* TripDetailSettingViewController.swift */,
+				2922DCEA1BABCD2A00CB3CE2 /* MapForRouteViewController.swift */,
 				29A5E98B1BAA907B005E3FDE /* Assets.xcassets */,
 				29A5E98D1BAA907B005E3FDE /* LaunchScreen.storyboard */,
 				29A5E9901BAA907B005E3FDE /* Info.plist */,
 				29A5E9881BAA907B005E3FDE /* TripStuff2.xcdatamodeld */,
+				29A5E9811BAA907B005E3FDE /* AppDelegate.swift */,
 			);
 			path = TripStuff2;
 			sourceTree = "<group>";
@@ -261,9 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29A5E9841BAA907B005E3FDE /* ViewController.swift in Sources */,
 				29A5E98A1BAA907B005E3FDE /* TripStuff2.xcdatamodeld in Sources */,
+				29F917791BAA941F0021F230 /* JournalTableViewController.swift in Sources */,
 				29A5E9821BAA907B005E3FDE /* AppDelegate.swift in Sources */,
+				2922DCEB1BABCD2A00CB3CE2 /* MapForRouteViewController.swift in Sources */,
+				29F9177B1BAACB3A0021F230 /* TripDetailSettingViewController.swift in Sources */,
+				2952AE161BAADF60005EACEF /* TripInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TripStuff2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XI.TripStuff2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TripStuff2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XI.TripStuff2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,6 +504,7 @@
 				29A5E9AB1BAA907C005E3FDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29A5E9AC1BAA907C005E3FDE /* Build configuration list for PBXNativeTarget "TripStuff2Tests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +513,7 @@
 				29A5E9AE1BAA907C005E3FDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29A5E9AF1BAA907C005E3FDE /* Build configuration list for PBXNativeTarget "TripStuff2UITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +522,7 @@
 				29A5E9B11BAA907C005E3FDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
