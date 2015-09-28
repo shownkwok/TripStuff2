@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2922DCEB1BABCD2A00CB3CE2 /* MapForRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922DCEA1BABCD2A00CB3CE2 /* MapForRouteViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		29487EB21BAE677D00DDE58C /* Waypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29487EB11BAE677D00DDE58C /* Waypoint.swift */; settings = {ASSET_TAGS = (); }; };
+		295207321BB13D0F008C2DC7 /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295207311BB13D0F008C2DC7 /* SearchResultsTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		2952AE161BAADF60005EACEF /* TripInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2952AE151BAADF60005EACEF /* TripInfo.swift */; settings = {ASSET_TAGS = (); }; };
 		29A5E9821BAA907B005E3FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A5E9811BAA907B005E3FDE /* AppDelegate.swift */; };
 		29A5E9871BAA907B005E3FDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A5E9851BAA907B005E3FDE /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		2922DCEA1BABCD2A00CB3CE2 /* MapForRouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapForRouteViewController.swift; sourceTree = "<group>"; };
+		29487EB11BAE677D00DDE58C /* Waypoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waypoint.swift; sourceTree = "<group>"; };
+		295207311BB13D0F008C2DC7 /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
 		2952AE151BAADF60005EACEF /* TripInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripInfo.swift; path = ../TripInfo.swift; sourceTree = "<group>"; };
 		29A5E97E1BAA907B005E3FDE /* TripStuff2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripStuff2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A5E9811BAA907B005E3FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,8 +112,10 @@
 				29A5E9851BAA907B005E3FDE /* Main.storyboard */,
 				29F917781BAA941F0021F230 /* JournalTableViewController.swift */,
 				2952AE151BAADF60005EACEF /* TripInfo.swift */,
+				29487EB11BAE677D00DDE58C /* Waypoint.swift */,
 				29F9177A1BAACB3A0021F230 /* TripDetailSettingViewController.swift */,
 				2922DCEA1BABCD2A00CB3CE2 /* MapForRouteViewController.swift */,
+				295207311BB13D0F008C2DC7 /* SearchResultsTableViewCell.swift */,
 				29A5E98B1BAA907B005E3FDE /* Assets.xcassets */,
 				29A5E98D1BAA907B005E3FDE /* LaunchScreen.storyboard */,
 				29A5E9901BAA907B005E3FDE /* Info.plist */,
@@ -273,6 +279,8 @@
 				29A5E98A1BAA907B005E3FDE /* TripStuff2.xcdatamodeld in Sources */,
 				29F917791BAA941F0021F230 /* JournalTableViewController.swift in Sources */,
 				29A5E9821BAA907B005E3FDE /* AppDelegate.swift in Sources */,
+				29487EB21BAE677D00DDE58C /* Waypoint.swift in Sources */,
+				295207321BB13D0F008C2DC7 /* SearchResultsTableViewCell.swift in Sources */,
 				2922DCEB1BABCD2A00CB3CE2 /* MapForRouteViewController.swift in Sources */,
 				29F9177B1BAACB3A0021F230 /* TripDetailSettingViewController.swift in Sources */,
 				2952AE161BAADF60005EACEF /* TripInfo.swift in Sources */,

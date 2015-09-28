@@ -19,6 +19,8 @@ class TripInfo{
     //if stay in one place, u can ignore placeTo
     var placeFrom: String?
     var placeTo: String = ""
+    var placeFromLocation: Waypoint?
+    var placeToLocation: Waypoint?
     var timeBegin: NSDate?
     var timeEnd: NSDate?
     var status: String = "Foot"

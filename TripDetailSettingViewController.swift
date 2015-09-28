@@ -10,23 +10,28 @@ import UIKit
 
 class TripDetailSettingViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
 
-    var tripInfoToBeEdit: TripInfo?
+  //  var tripInfoToBeEdit: TripInfo?
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        print("s")
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let trip = tripInfoToBeEdit{
-            placeFrom.text = trip.placeFrom
-            timeFrom.date = trip.timeBegin!
-            timeTo.date = trip.timeEnd!
-            placeTo.text = trip.placeTo
-            noteForTrip.text = trip.note
-        }
+        print("s")
+//        if let trip = tripInfoToBeEdit{
+//            placeFrom.text = trip.placeFrom
+//            timeFrom.date = trip.timeBegin!
+//            timeTo.date = trip.timeEnd!
+//            placeTo.text = trip.placeTo
+//            noteForTrip.text = trip.note
+//        }
     }
     
     
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBOutlet weak var placeFrom: UITextField!{
@@ -69,25 +74,25 @@ class TripDetailSettingViewController: UIViewController, UIPickerViewDataSource,
     
     
     @IBAction func done(sender: UIBarButtonItem) {
-        if placeFrom.text == ""{
-            print("placeFrom is nil")
-        }else if (timeTo.date == timeTo.date.earlierDate(timeFrom.date)){
-            print("time is wrong")
-        }else{
-            tripInfoToBeEdit = TripInfo(placeFrom: placeFrom.text!, timeBegin: timeFrom.date, timeEnd: timeTo.date)
-            tripInfoToBeEdit?.status = Constant.StayOrMoveStatusDetail[stayOrMoveStatus.selectedRowInComponent(0)][stayOrMoveStatus.selectedRowInComponent(1)]
-            if placeTo.text != ""{
-                tripInfoToBeEdit?.placeTo = placeTo.text!
-            }
-            if routFromMap != nil{
-                tripInfoToBeEdit?.imageForRouteInMap = routFromMap.image
-            }
-            if spend.text != ""{
-                tripInfoToBeEdit?.price = Double(spend.text!)!
-            }
-            
-            self.dismissViewControllerAnimated(true, completion: nil)
-        }
+//        if placeFrom.text == ""{
+//            print("placeFrom is nil")
+//        }else if (timeTo.date == timeTo.date.earlierDate(timeFrom.date)){
+//            print("time is wrong")
+//        }else{
+//            tripInfoToBeEdit = TripInfo(placeFrom: placeFrom.text!, timeBegin: timeFrom.date, timeEnd: timeTo.date)
+//            tripInfoToBeEdit?.status = Constant.StayOrMoveStatusDetail[stayOrMoveStatus.selectedRowInComponent(0)][stayOrMoveStatus.selectedRowInComponent(1)]
+//            if placeTo.text != ""{
+//                tripInfoToBeEdit?.placeTo = placeTo.text!
+//            }
+//            if routFromMap != nil{
+//                tripInfoToBeEdit?.imageForRouteInMap = routFromMap.image
+//            }
+//            if spend.text != ""{
+//                tripInfoToBeEdit?.price = Double(spend.text!)!
+//            }
+//            
+//            self.dismissViewControllerAnimated(true, completion: nil)
+//        }
     }
     
 //MARK: Set pickerView
