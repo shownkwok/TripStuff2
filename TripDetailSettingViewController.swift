@@ -10,7 +10,7 @@ import UIKit
 
 class TripDetailSettingViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
 
-  //  var tripInfoToBeEdit: TripInfo?
+    var tripInfoToBeEdit: TripInfo?
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         print("s")
@@ -19,13 +19,11 @@ class TripDetailSettingViewController: UIViewController, UIPickerViewDataSource,
     override func viewDidLoad() {
         super.viewDidLoad()
         print("s")
-//        if let trip = tripInfoToBeEdit{
-//            placeFrom.text = trip.placeFrom
-//            timeFrom.date = trip.timeBegin!
-//            timeTo.date = trip.timeEnd!
-//            placeTo.text = trip.placeTo
-//            noteForTrip.text = trip.note
-//        }
+        if let trip = tripInfoToBeEdit{
+            timeFrom.date = trip.timeBegin!
+            timeTo.date = trip.timeEnd!
+            noteForTrip.text = trip.note
+        }
     }
     
     
@@ -34,22 +32,9 @@ class TripDetailSettingViewController: UIViewController, UIPickerViewDataSource,
         super.didReceiveMemoryWarning()
     }
     
-    @IBOutlet weak var placeFrom: UITextField!{
-        didSet{
-            placeFrom.becomeFirstResponder()
-        }
-    }
     
-    @IBOutlet weak var placeTo: UITextField!
-    
-    @IBOutlet weak var stayOrMoveStatus: UIPickerView!{
-        didSet{
-       //     stayOrMoveStatus.selectRow(3, inComponent: 1, animated: true)
-        }
-    }
-    
+    @IBOutlet weak var stayOrMoveStatus: UIPickerView!
     @IBOutlet weak var timeFrom: UIDatePicker!{
-        
         didSet{
             timeFrom.datePickerMode = UIDatePickerMode.Time
             timeFrom.minuteInterval = 30
@@ -64,8 +49,6 @@ class TripDetailSettingViewController: UIViewController, UIPickerViewDataSource,
     }
     
     @IBOutlet weak var routFromMap: UIImageView!
-
-    @IBOutlet weak var noteForTrip: UITextView!
     
     @IBOutlet weak var spend: UITextField!
     
@@ -137,8 +120,6 @@ class TripDetailSettingViewController: UIViewController, UIPickerViewDataSource,
     
     //MARK: set textfield
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        placeFrom.resignFirstResponder()
-        placeTo.resignFirstResponder()
         noteForTrip.resignFirstResponder()
         spend.resignFirstResponder()
         return true

@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="1458.5" y="-24.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Trip Detail Setting View Controller-->
         <scene sceneID="7pa-fe-vhM">
             <objects>
-                <viewController id="l53-a9-gzW" sceneMemberID="viewController">
+                <viewController id="l53-a9-gzW" customClass="TripDetailSettingViewController" customModule="TripStuff2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FtY-Ys-OxY"/>
                         <viewControllerLayoutGuide type="bottom" id="ObO-Mh-xYJ"/>
@@ -86,33 +86,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="placeFrom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJL-ei-vL1">
-                                <rect key="frame" x="0.0" y="94" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="placeTo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OcR-Ji-sUS">
-                                <rect key="frame" x="278" y="94" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="w7e-x6-aq7">
                                 <rect key="frame" x="0.0" y="152" width="157" height="102"/>
                                 <date key="date" timeIntervalSinceReferenceDate="464176503.11636502">
                                     <!--2015-09-17 09:55:03 +0000-->
                                 </date>
                             </datePicker>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gj8-2H-DvL">
-                                <rect key="frame" x="224" y="152" width="151" height="102"/>
-                                <date key="date" timeIntervalSinceReferenceDate="464176514.48758298">
-                                    <!--2015-09-17 09:55:14 +0000-->
-                                </date>
-                            </datePicker>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Note:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B6l-Ge-9hr">
-                                <rect key="frame" x="0.0" y="444" width="375" height="87"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QHD-xe-gkZ">
+                                <rect key="frame" x="105" y="64" width="165" height="80"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="l53-a9-gzW" id="kbk-py-H3A"/>
+                                    <outlet property="delegate" destination="l53-a9-gzW" id="jQn-Qj-QC4"/>
+                                </connections>
+                            </pickerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MBu-vq-M11">
                                 <rect key="frame" x="67" y="295" width="240" height="128"/>
                             </imageView>
@@ -128,13 +114,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QHD-xe-gkZ">
-                                <rect key="frame" x="105" y="64" width="165" height="80"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="l53-a9-gzW" id="kbk-py-H3A"/>
-                                    <outlet property="delegate" destination="l53-a9-gzW" id="jQn-Qj-QC4"/>
-                                </connections>
-                            </pickerView>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gj8-2H-DvL">
+                                <rect key="frame" x="224" y="152" width="151" height="102"/>
+                                <date key="date" timeIntervalSinceReferenceDate="464176514.48758298">
+                                    <!--2015-09-17 09:55:14 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -146,9 +131,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="noteForTrip" destination="B6l-Ge-9hr" id="hjd-gw-xCk"/>
-                        <outlet property="placeFrom" destination="AJL-ei-vL1" id="pkg-qi-tBb"/>
-                        <outlet property="placeTo" destination="OcR-Ji-sUS" id="SqP-rb-T4c"/>
                         <outlet property="routFromMap" destination="MBu-vq-M11" id="liA-7X-2o6"/>
                         <outlet property="spend" destination="Oa4-La-yIa" id="rb8-Mm-zW3"/>
                         <outlet property="stayOrMoveStatus" destination="QHD-xe-gkZ" id="qPC-RI-YMW"/>
