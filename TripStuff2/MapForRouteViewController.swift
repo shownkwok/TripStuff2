@@ -41,6 +41,25 @@ class MapForRouteViewController: UIViewController, MKMapViewDelegate, UITableVie
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var dateFrom: UIDatePicker!{
+        didSet{
+            dateFrom.datePickerMode = UIDatePickerMode.Time
+            dateFrom.minuteInterval = 30
+        }
+    }
+
+    
+    @IBOutlet weak var dateTo: UIDatePicker!{
+        didSet{
+            dateTo.datePickerMode = UIDatePickerMode.Time
+            dateTo.minuteInterval = 30
+        }
+    }
+
+    
+    
+    @IBOutlet weak var price: UITextField!
+    
     @IBOutlet weak var searchResultTable: UITableView!
 
     @IBOutlet weak var searchFrom: UISearchBar!{
@@ -150,6 +169,8 @@ class MapForRouteViewController: UIViewController, MKMapViewDelegate, UITableVie
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         placeTo.resignFirstResponder()
         placeFrom.resignFirstResponder()
+        dateFrom.resignFirstResponder()
+        dateTo.resignFirstResponder()
         return true
     }
     
@@ -206,6 +227,8 @@ class MapForRouteViewController: UIViewController, MKMapViewDelegate, UITableVie
         searchResultTable.hidden = true
 
     }
+    
+    
     
     
     

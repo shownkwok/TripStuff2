@@ -22,7 +22,7 @@ class TripDetailSettingViewController: UIViewController, UIPickerViewDataSource,
         if let trip = tripInfoToBeEdit{
             timeFrom.date = trip.timeBegin!
             timeTo.date = trip.timeEnd!
-            noteForTrip.text = trip.note
+  //          noteForTrip.text = trip.note
         }
     }
     
@@ -120,7 +120,7 @@ class TripDetailSettingViewController: UIViewController, UIPickerViewDataSource,
     
     //MARK: set textfield
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        noteForTrip.resignFirstResponder()
+//        noteForTrip.resignFirstResponder()
         spend.resignFirstResponder()
         return true
     }
